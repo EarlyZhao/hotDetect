@@ -1,11 +1,11 @@
 
 # 自动探测热点
-	- 一个自动探测热点的SDK【本地探测】
-	- 接口埋点统计，埋点对象可以是数字、string等，一般是被访问对象id
-	- 通过滑动窗口+频率计数+优先队列计算Top-K，K由业务方参数决定
-	- 通过业务回调定时回传上一次窗口热点ID TOP-K，窗口时间由业务方参数决定
+- 一个自动探测热点的SDK【本地探测】
+- 接口埋点统计，埋点对象可以是数字、string等，一般是被访问对象id
+- 通过滑动窗口+频率计数+优先队列计算Top-K，K由业务方参数决定
+- 通过业务回调定时回传上一次窗口热点ID TOP-K，窗口时间由业务方参数决定
 ## 项目简介 
-   ![SDK原理图](https://github.com/EarlyZhao/hotDetect/blob/master/doc/hotDetect.jpg?raw=true)
+   ![SDK原理图](https://github.com/EarlyZhao/hotDetect/blob/master/doc/hotDetect.png?raw=true)
 
     
 # 代码示例
@@ -34,5 +34,6 @@ detectSomeThing := hotDetect.NewDetect(hotDetect.NewConfig(windowSize int, // �
 ```
 detectSomeThing.Record(某id)
 ```
-# 相关资料
-    https://ruby-china.org/topics/40596
+# 资料
+   
+[高并发下的热点处理实践]( https://ruby-china.org/topics/40596)
